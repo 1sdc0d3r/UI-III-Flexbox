@@ -165,7 +165,7 @@ header {
 }
 
 header nav {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -175,6 +175,7 @@ header nav {
   max-width: 900px;
   background-color: peru;
   opacity: 0.8;
+  /* border: 1px solid red; */
 }
 
 header nav a {
@@ -182,6 +183,7 @@ header nav a {
   text-decoration: none;
   font-size: 22px;
   text-align: center;
+  padding: 0 5px;
 }
 
 header nav a:hover {
@@ -251,18 +253,16 @@ header nav a:hover {
 }
 .btmText {
   display: flex;
+  /* border: 1px solid red; */
+  border-bottom: 3px solid black;
+  padding: 5px;
+  margin-bottom: 30px;
 }
 
 .btmText .vision {
   /* width: 32.33%; */
   /* display: inline-block; */
   margin-bottom: 10px;
-}
-
-.btmText {
-  border-bottom: 3px solid black;
-  padding: 5px;
-  margin-bottom: 30px;
 }
 
 footer {
