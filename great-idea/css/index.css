@@ -165,7 +165,7 @@ header {
 }
 
 header nav {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -173,6 +173,8 @@ header nav {
   margin-top: 15px;
   position: fixed;
   max-width: 900px;
+  background-color: peru;
+  opacity: 0.8;
 }
 
 header nav a {
