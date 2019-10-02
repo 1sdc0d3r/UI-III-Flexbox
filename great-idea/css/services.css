@@ -150,17 +150,26 @@ h5 {
 }
 
 /* Your code starts here! */
-
+@media (max-width: 900px) {
+}
 .container {
   /* border: 1px solid red; */
   width: 900px;
   margin: auto;
   position: relative;
 }
-
+@media (max-width: 900px) {
+  .container {
+    width: 675px;
+  }
+  header {
+    max-width: 670px;
+  }
+}
 header {
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   border-bottom: 2px solid black;
 }
@@ -168,12 +177,14 @@ header {
 header nav {
   border: 1px solid green;
   display: flex;
-  width: 100%;
+  width: 98%;
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
   position: fixed;
   max-width: 900px;
+  background-color: peru;
+  opacity: 0.8;
 }
 
 header nav a {
@@ -191,44 +202,126 @@ header nav a:hover {
   border-radius: 10px;
 }
 
-header img {
+.services-header-img {
   width: 100%;
-  margin-top: 50px;
-}
-
-header p {
-  border-bottom: 1px solid black;
+  height: 200px;
+  margin-top: 70px;
   margin-bottom: 20px;
+  flex-direction: column;
+}
+@media (max-width: 900px) {
+  .services-header-img {
+    width: 100%;
+  }
+  header nav {
+    max-width: 675px;
+  }
+}
+header h2 {
+  font-size: 28px;
+}
+header p {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+@media (max-width: 900px) {
+  h2,
+  p {
+    text-align: center;
+  }
+  header h2 {
+    margin-left: 290px; /* how to center this??? */
+  }
 }
 
 .middleSect {
-  diplay: flex;
+  display: flex;
   flex-wrap: wrap;
-  border-bottom: 2px solid black;
+  justify-content: space-evenly;
+  border-bottom: 3px solid black;
+  margin: 25px 0;
 }
 
 .middleSect .midBox {
-  border: 1px solid black;
+  border: solid red 2px;
+  width: 48%;
+  padding: 10px;
+  margin: 5px 5px 25px 5px;
   background-color: #f4f3f4;
-  margin: 5px;
-  /* width: 300px; */
+}
+@media (max-width: 900px) {
+  .middleSect .midBox {
+    /* background-color: red; */
+    flex-direction: column;
+    width: 50%;
+    margin: 5px;
+    border: 1px solid black;
+  }
 }
 
 .middleSect .midBox button {
   background-color: white;
   border: 1px solid black;
   border-radius: 8px;
+  margin: 13px 0 8px 0px;
+  padding: 10px 25px;
+}
+
+.middleSect .midBox button:hover {
+  background-color: pink;
+  color: aqua;
+  border: 2px solid royalblue;
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .middleSect .midBox button {
+    margin: 13px 0 8px 85px;
+  }
+}
+.iosDev {
+  margin-bottom: 50px;
 }
 
 .btmSect {
+  margin-top: 25px;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .btmSect .leftTxt {
-  flex-direction: column;
+  width: 48%;
+}
+
+.btmSect .leftTxt p {
+  width: 87%;
+}
+
+@media (max-width: 900px) {
+  .btmSect .leftTxt {
+    width: 50%;
+    text-align: center;
+  }
+
+  .leftTxt .list ul li {
+    list-style: none;
+  }
+  .btmSect img {
+    display: none;
+  }
+}
+
+.list ul li {
+  margin-left: 25px;
+  list-style: circle;
+  line-height: 27px;
 }
 
 footer {
+  margin-top: 15px;
   width: 100%;
   text-align: center;
 }
